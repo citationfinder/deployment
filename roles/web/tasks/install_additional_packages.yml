@@ -4,3 +4,10 @@
   apt: name={{ item }} update_cache={{ update_apt_cache }} force=yes state=installed
   with_items:
     - libav-tools
+
+- name: Install lxml dependencies
+  apt: pkg={{item}} state=installed
+  with_items:
+    - libxml2-dev
+    - libxslt1-dev
+    - zlib1g-dev
