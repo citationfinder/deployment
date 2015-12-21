@@ -18,4 +18,4 @@
 - name: Build maven
   command: mvn -Dmaven.test.skip={{ grobid_maven_skip_test }} clean install
            chdir={{ grobid_path }}
-  notify: start grobid
+  #notify: start grobid
