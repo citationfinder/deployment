@@ -1,0 +1,4 @@
+---
+- name: start grobid
+  command: mvn -Dmaven.test.skip={{ grobid_maven_skip_test }} jetty:run-war
+           chdir={{grobid_path}}/grobid-service

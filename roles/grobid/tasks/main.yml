@@ -1,0 +1,21 @@
+---
+- name: Install java(7-jdk)
+  apt: pkg={{item}} state=installed update_cache=true
+  with_items:
+    - openjdk-7-jdk
+    - openjdk-7-jre-lib
+
+- name: Install maven
+  apt: pkg=maven state=installed update_cache=true
+
+- name: Clone grobid
+  git: repo=https://github.com/kermitt2/grobid.git
+       dest={{grobid_path}}
+
+#- name: Download and unzip grobid
+#  unarchive: src={{grobid_download_url}} dest={{grobid_path}} copy=no
+
+- name: Build maven
+  command: mvn -Dmaven.test.skip={{ grobid_maven_skip_test }} clean install
+           chdir={{grobid_path}}
+  notify: start grobid

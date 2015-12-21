@@ -1,0 +1,5 @@
+---
+lib_path: "/webapps/{{ application_name }}/lib"
+grobid_path: "{{ lib_path  }}/grobid"
+grobid_download_url: "https://github.com/kermitt2/grobid/zipball/master"
+grobid_maven_skip_test: "true"
