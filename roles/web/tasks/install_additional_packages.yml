@@ -1,12 +1,12 @@
 ---
 
-- name: Install additional packages
-  apt: name={{ item }} update_cache={{ update_apt_cache }} force=yes state=installed
+- name: Install MySQL-python dependencies
+  apt: name={{ item }} update_cache={{ update_apt_cache }} state=installed
   with_items:
-    - libav-tools
+    - libmysqlclient-dev
 
 - name: Install lxml dependencies
-  apt: pkg={{item}} state=installed
+  apt: pkg={{ item }} update_cache={{ update_apt_cache }} state=installed
   with_items:
     - libxml2-dev
     - libxslt1-dev
