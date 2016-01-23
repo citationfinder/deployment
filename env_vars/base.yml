@@ -2,8 +2,8 @@
 
 git_repo: git@sun01.pool.ifis.uni-luebeck.de:groppe/search-for-citations.git
 
-project_name: search_for_citations
-application_name: search_for_citations
+project_name: scholarly_citation_finder
+application_name: scholarly_citation_finder
 
 ssl_dest_dir: /etc/ssl
 

@@ -1,10 +1,10 @@
 ---
 
 - name: Provision a {{ application_name }} web server
-  hosts: localhost
-  sudo: yes
-  sudo_user: root
-  remote_user: root
+  hosts: webservers
+  become: yes
+  become_method: sudo
+  remote_user: rosenthal
   vars:
     - update_apt_cache: yes
   vars_files:
@@ -13,6 +13,6 @@
 
   roles:
     - base
-    - postgresql
+    #- postgresql
     - web
-    - grobid
+    #- grobid
