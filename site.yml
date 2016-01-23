@@ -15,4 +15,4 @@
     - base
     - postgresql
     - web
-    #- grobid
+    - grobid
