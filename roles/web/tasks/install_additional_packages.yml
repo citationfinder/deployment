@@ -1,9 +1,9 @@
 ---
 
-- name: Install MySQL-python dependencies
-  apt: name={{ item }} update_cache={{ update_apt_cache }} state=installed
-  with_items:
-    - libmysqlclient-dev
+#- name: Install MySQL-python dependencies
+#  apt: name={{ item }} update_cache={{ update_apt_cache }} state=installed
+#  with_items:
+#    - libmysqlclient-dev
 
 - name: Install lxml dependencies
   apt: pkg={{ item }} update_cache={{ update_apt_cache }} state=installed
@@ -11,3 +11,8 @@
     - libxml2-dev
     - libxslt1-dev
     - zlib1g-dev
+
+#- name: Install requests dependencies
+#  apt: pkg={{ item }} update_cache={{ update_apt_cache }} state=installed
+#  with_items:
+#    - libffi-dev
