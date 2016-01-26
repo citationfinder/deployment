@@ -2,13 +2,11 @@
 
 # Git settings.
 setup_git_repo: yes
-git_branch: scf
+git_branch: master
 
 
 # Database settings.
-db_user: "{{ application_name }}"
-db_name: "{{ application_name }}"
-db_password: password
+mag_db_password: MAG-DATABASE-PASSWORD-HERE
 
 
 # Gunicorn settings. For the number of workers, a good rule to follow is
@@ -30,7 +28,7 @@ ssl_key_password: password
 
 # Application settings.
 django_settings_file: "{{ application_name }}.settings.development"
-django_secret_key: "e5zjfb$nbtq(u(go5q9etj^t@mhl2kr&w_np%3_zq+g4rx1n!l"
+django_secret_key: "DJANGO-SECRET-KEY-HERE"
 
 run_django_db_migrations: no
 run_django_collectstatic: no
