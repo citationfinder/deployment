@@ -7,7 +7,12 @@ git_branch: master
 
 # Database settings.
 mag_db_password: MAG-DATABASE-PASSWORD-HERE
+dblp_db_password: DBLP-DATABASE-PASSWORD-HERE
+citeseerx_db_password: CITESEERX-DATABASE-PASSWORD-HERE
 
+# Gunicorn settings
+gunicorn_user: "{{ application_name }}"
+gunicorn_group: webapps
 
 # Gunicorn settings. For the number of workers, a good rule to follow is
 # 2 x number of CPUs + 1
@@ -30,5 +35,5 @@ ssl_key_password: password
 django_settings_file: "{{ application_name }}.settings.development"
 django_secret_key: "DJANGO-SECRET-KEY-HERE"
 
-run_django_db_migrations: no
-run_django_collectstatic: no
+run_django_db_migrations: yes
+run_django_collectstatic: yes
