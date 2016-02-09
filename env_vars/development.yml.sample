@@ -9,6 +9,7 @@ git_branch: master
 #mag_db_password: MAG-DATABASE-PASSWORD
 #dblp_db_user: DBLP-DATABASE-USERNAME
 #dblp_db_password: DBLP-DATABASE-PASSWORD
+#citeseerx_db_user: CITESEERX-DATABASE-USER
 #citeseerx_db_password: CITESEERX-DATABASE-PASSWORD
 
 # Gunicorn settings

@@ -26,4 +26,5 @@ django_environment:
   MAG_DATABASE_PASSWORD: "{{ mag_db_password }}"
   DBLP_DATABASE_USER: "{{ dblp_db_user }}"
   DBLP_DATABASE_PASSWORD: "{{ dblp_db_password }}"
+  CITESEERX_DATABASE_USER: "{{ citeseerx_db_user }}"
   CITESEERX_DATABASE_PASSWORD: "{{ citeseerx_db_password }}"
