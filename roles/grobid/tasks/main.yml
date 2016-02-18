@@ -9,11 +9,8 @@
   apt: pkg=maven state=installed update_cache=true
 
 - name: Clone grobid
-  git: repo=https://github.com/kermitt2/grobid.git
+  git: repo={{ grobid_download_url }}
        dest={{ grobid_path }}
-
-#- name: Download and unzip grobid
-#  unarchive: src={{grobid_download_url}} dest={{grobid_path}} copy=no
 
 - name: Build maven
   command: mvn -Dmaven.test.skip={{ grobid_maven_skip_test }} clean install
