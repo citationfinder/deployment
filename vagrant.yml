@@ -2,8 +2,8 @@
 
 - name: Create a {{ application_name }} virtual machine via vagrant
   hosts: all
-  sudo: yes
-  sudo_user: root
+  become: yes
+  become_method: sudo
   remote_user: vagrant
   vars:
     - update_apt_cache: yes
@@ -13,5 +13,5 @@
 
   roles:
     - base
-    - postgresql
+    #- postgresql
     - web

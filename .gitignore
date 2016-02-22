@@ -1,2 +1,7 @@
-# Local files
+# Local configuration files
 development.yml
+vagrant.yml
+
+# Local Vagrant files
+.vagrant/
+vagrant_ansible_inventory_default

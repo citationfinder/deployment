@@ -10,7 +10,7 @@ Ansible Playbook (deployment script) to setup the *Scholarly Citation Finder* Dj
 
 For details see [original readme](README.org.md)
 
-### Usage
+### Usage - Deploy Webserver
 
 Configure the script
 * Copy the file [development.yml.sample](env_vars/development.yml.sample) to development.yml and configure it (database password, etc.)
@@ -21,6 +21,19 @@ Run the script: (1) Completely or (2) deploy only
 make install
 make deploy
 ```
+
+### Usage - Deploy Vagrant
+
+Configure the script
+* Copy the file [vagrant.yml.sample](env_vars/vagrant.yml.sample) to vagrant.yml and configure it (database password, etc.)
+
+Run vagrant
+```
+make vagrant
+```
+
+According to the [Vagrantfile](Vagrantfile) the IP is: http://192.168.33.15
+
 
 ### TODOs
 
