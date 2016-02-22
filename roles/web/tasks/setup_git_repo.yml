@@ -6,6 +6,6 @@
        dest={{ project_path }}
        accept_hostkey=yes
        force=true
-       key_file=/home/rosenthal/.ssh/id_rsa
+       key_file="/home/{{ gunicorn_user }}/.ssh/id_rsa"
   when: setup_git_repo is defined and setup_git_repo
   tags: git

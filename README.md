@@ -27,15 +27,15 @@ make deploy
 Configure the script
 * Copy the file [vagrant.yml.sample](env_vars/vagrant.yml.sample) to vagrant.yml and configure it (database password, etc.)
 
-Run vagrant
+Run the Vagrant script to setup a VirtualBox and run the Ansible playbook
 ```
 make vagrant
 ```
 
 According to the [Vagrantfile](Vagrantfile) the IP is: http://192.168.33.15
 
+To re-run the Ansible playbook on the existing VM use: `vagrant provision`
 
 ### TODOs
 
-* In setup_git_repo.yml: Remove `key_file=/home/rosenthal/.ssh/id_rsa`
 * PostgreSQL
