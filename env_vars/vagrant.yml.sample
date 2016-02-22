@@ -6,11 +6,16 @@ git_branch: master
 
 
 # Database settings.
-#mag_db_password: MAG-DATABASE-PASSWORD
-#dblp_db_user: DBLP-DATABASE-USERNAME
-#dblp_db_password: DBLP-DATABASE-PASSWORD
-#citeseerx_db_user: CITESEERX-DATABASE-USER
-#citeseerx_db_password: CITESEERX-DATABASE-PASSWORD
+mag_db_name: mag
+mag_db_user: mag
+mag_db_password: password
+dblp_db_name: dblp
+dblp_db_user: dblp
+dblp_db_password: password
+citeseerx_db_name: citeseerx
+citeseerx_db_user: citeseerx
+citeseerx_db_password: password
+
 
 # Gunicorn settings
 gunicorn_user: "{{ application_name }}"
