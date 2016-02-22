@@ -14,5 +14,7 @@
   roles:
     - base
     #- postgresql
+    #- rabbitmq
     - web
+    #- celery
     #- grobid
