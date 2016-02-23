@@ -83,4 +83,5 @@ django_settings_file: "{{ application_name }}.settings.development"
 django_secret_key: "akr2icmg1n8%z^3fe3c+)5d0(t^cy-2_25rrl35a7@!scna^1#"
 
 run_django_db_migrations: yes
+run_django_db_mag_migrations: yes
 run_django_collectstatic: yes

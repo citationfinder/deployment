@@ -17,4 +17,4 @@
     - rabbitmq
     - web
     - celery
-    - grobid
+    #- grobid

@@ -23,6 +23,16 @@
   when: run_django_db_migrations is defined and run_django_db_migrations
   tags: django.migrate
 
+- name: Run Django database mag migrations
+  django_manage:
+    command: "migrate --database {{ mag_db_name }}"
+    app_path: "{{ project_path }}"
+    virtualenv: "{{ virtualenv_path }}"
+    settings: "{{ django_settings_file }}"
+  environment: "{{ django_environment }}"
+  when: run_django_db_mag_migrations is defined and run_django_db_mag_migrations
+  tags: django.migrate
+
 - name: Run Django collectstatic
   django_manage:
     command: collectstatic
