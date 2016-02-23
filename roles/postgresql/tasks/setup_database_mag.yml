@@ -1,0 +1,17 @@
+---
+
+- name: Ensure mag database is created
+  sudo_user: postgres
+  postgresql_db: name={{ mag_db_name }}
+
+- name: Ensure mag user has access to the database
+  sudo_user: postgres
+  postgresql_user: db={{ mag_db_name }}
+                   name={{ mag_db_user }}
+                   password={{ mag_db_password }}
+                   priv=ALL
+
+- name: Ensure mag user does not have unnecessary privileges
+  sudo_user: postgres
+  postgresql_user: name={{ mag_db_user }}
+                   role_attr_flags=NOSUPERUSER,NOCREATEDB

@@ -38,4 +38,4 @@ To re-run the Ansible playbook on the existing VM use: `vagrant provision`
 
 ### TODOs
 
-* PostgreSQL
+* PostgreSQL requires a `sudo pg_createcluster 9.3 main --start`
