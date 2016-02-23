@@ -32,3 +32,4 @@ django_environment:
   CITESEERX_DATABASE_NAME: "{{ citeseerx_db_name }}"
   CITESEERX_DATABASE_USER: "{{ citeseerx_db_user }}"
   CITESEERX_DATABASE_PASSWORD: "{{ citeseerx_db_password }}"
+  BROKER_URL: "{{ broker_url|default(omit) }}"
