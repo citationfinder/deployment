@@ -10,6 +10,7 @@
   tags:
     - celery
     - deploy
+    - quick
 
 - name: Restart the {{ celery_application_name }} app
   supervisorctl: name={{ celery_application_name }} state=restarted
@@ -17,3 +18,4 @@
   tags:
     - celery
     - deploy
+    - quick
