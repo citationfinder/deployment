@@ -1,0 +1,17 @@
+---
+
+- name: Ensure default database is created
+  sudo_user: postgres
+  postgresql_db: name={{ default_db_name }}
+
+- name: Ensure default user has access to the database
+  sudo_user: postgres
+  postgresql_user: db={{ default_db_name }}
+                   name={{ default_db_user }}
+                   password={{ default_db_password }}
+                   priv=ALL
+
+- name: Ensure default user does not have unnecessary privileges
+  sudo_user: postgres
+  postgresql_user: name={{ default_db_user }}
+                   role_attr_flags=NOSUPERUSER,NOCREATEDB

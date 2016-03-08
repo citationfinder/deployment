@@ -9,12 +9,12 @@ setup_git_repo: yes
 git_branch: master
 
 # Database settings
+default_db_name: scf
+default_db_user: scf
+default_dblp_db_password: password
 mag_db_name: mag
 mag_db_user: mag
 mag_db_password: password
-dblp_db_name: dblp
-dblp_db_user: dblp
-dblp_db_password: password
 citeseerx_db_name: citeseerx
 citeseerx_db_user: citeseerx
 citeseerx_db_password: password
