@@ -11,7 +11,7 @@ git_branch: master
 # Database settings
 default_db_name: scf
 default_db_user: scf
-default_dblp_db_password: password
+default_db_password: password
 mag_db_name: mag
 mag_db_user: mag
 mag_db_password: password
