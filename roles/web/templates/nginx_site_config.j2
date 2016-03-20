@@ -57,8 +57,8 @@ server {
     #    root {{ project_path }}/{{ application_name }}/templates/;
     #}
 
-    #error_page 503 /maintenance_on.html;
-    #location = /maintenance_on.html {
-    #    root {{ virtualenv_path }}/;
-    #}
+    error_page 503 /maintenance_on.html;
+    location = /maintenance_on.html {
+        root {{ virtualenv_path }}/;
+    }
 }
