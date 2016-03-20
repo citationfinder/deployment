@@ -1,5 +1,4 @@
 ---
-lib_path: "/webapps/{{ application_name }}/lib"
-grobid_path: "{{ lib_path }}/grobid"
+grobid_path: "/webapps/grobid"
 grobid_download_url: "https://github.com/kermitt2/grobid.git"
 grobid_maven_skip_test: "true"
