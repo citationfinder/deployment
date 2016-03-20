@@ -4,5 +4,4 @@ Documentation: [scholarly-citation-finder.readthedocs.org](http://scholarly-cita
 
 ### TODOs
 
-* SSH key required
 * PostgreSQL requires a `sudo pg_createcluster 9.3 main --start`
