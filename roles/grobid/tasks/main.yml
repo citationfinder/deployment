@@ -1,4 +1,5 @@
 ---
+
 - name: Install java(7-jdk)
   apt: pkg={{ item }} state=installed update_cache=true
   with_items:
@@ -11,6 +12,8 @@
 - name: Clone grobid
   git: repo={{ grobid_download_url }}
        dest={{ grobid_path }}
+
+- include: set_file_permissions.yml
 
 - name: Build maven
   command: mvn -Dmaven.test.skip={{ grobid_maven_skip_test }} clean install
