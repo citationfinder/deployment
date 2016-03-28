@@ -61,4 +61,8 @@ server {
     location = /maintenance_on.html {
         root {{ virtualenv_path }}/;
     }
+    
+    location /grobid {
+        proxy_pass http://localhost:8080;
+    }
 }
