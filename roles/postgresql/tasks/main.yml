@@ -7,10 +7,15 @@
     - postgresql-contrib
     - libpq-dev
     - python-psycopg2
+  register: db_setup
   tags: packages
 
 - name: Ensure the PostgreSQL service is running
   service: name=postgresql state=started enabled=yes
+
+#- name: Setup postgres cluster
+#  shell: pg_createcluster 9.3 main --start
+#  when: db_setup.changed
 
 - include: setup_database_default.yml
 
