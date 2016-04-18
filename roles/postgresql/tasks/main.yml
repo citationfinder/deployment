@@ -21,4 +21,4 @@
 
 - include: setup_database_mag.yml
 
-- include: setup_database_citeseerx.yml
+- include: setup_database_dblp.yml
