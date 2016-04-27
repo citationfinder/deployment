@@ -1,6 +1,6 @@
 ## Scholarly Citation Finder -- Deployment
 
-Documentation: [scholarly-citation-finder.readthedocs.org](http://scholarly-citation-finder.readthedocs.org/en/latest/deployment/)
+Documentation: [scholarly-citation-finder.readthedocs.io](http://scholarly-citation-finder.readthedocs.io/en/latest/deployment/)
 
 ### TODOs
 
