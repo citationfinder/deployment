@@ -1,6 +1,8 @@
-## Scholarly Citation Finder -- Deployment
+## SCF Deployment Script
 
 Documentation: [scholarly-citation-finder.readthedocs.io](http://scholarly-citation-finder.readthedocs.io/en/latest/deployment/)
+
+Credit: The script is a fork of [jcalazan/ansible-django-stack](https://github.com/jcalazan/ansible-django-stack)
 
 ### TODOs
 
